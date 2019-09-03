@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>      
+<head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Sukumu/alphavantage@master/index.js"></script>
 </head>
 <body>
-
 <p id="output"></p>
-
 
   <script type="text/javascript">
 // alpha.data.daily(MSFT, outputsize, datatype, interval);
@@ -16,8 +15,5 @@ alpha.data.intraday('MSFT').then(data => {
 });
 
   </script>
-
-
-
 </body>
 </html>
