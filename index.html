@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>      
+</head>
+<body>
+
+<p id="output"></p>
+
+
+  <script type="text/javascript">
+// alpha.data.daily(MSFT, outputsize, datatype, interval);
+ document.getElementById("output").innerHTML = alpha.data.daily('MSFT');
+
+alpha.data.intraday('MSFT').then(data => {
+  console.log(data);
+});
+
+  </script>
+
+
+
+</body>
+</html>
